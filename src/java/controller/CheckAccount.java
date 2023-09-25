@@ -37,7 +37,6 @@ public class CheckAccount extends HttpServlet {
         // Write the response message, in an HTML page
         try {
             boolean checkAcc = false;
-            boolean checkPass = false;
             int userID = 1;
             out.println("<!DOCTYPE html>");
             out.println("<html><head>");
@@ -45,32 +44,16 @@ public class CheckAccount extends HttpServlet {
             out.println("<title>Echo Servlet</title></head>");
             // Retrieve the value of the query parameter "username" (from text field)
             String username = request.getParameter("username");
+            String password = request.getParameter("password");
             // Get null if the parameter is missing from query string.
             // Get empty string or string of white spaces if user did not fill in
-            if (username == null
-                    || (username = htmlFilter(username.trim())).length() == 0) {
-                out.println("<p>Name: MISSING</p>");
-            } else {
-                for (User u : listUser) {
-                    if (u.getUserPass().equals(username)) {
-                        checkAcc = true;
-                    }
+            for (User u : listUser) {
+                if (u.getUserAccount().equals(username) && u.getUserPass().equals(password)) {
+                    checkAcc = true;
+                    userID = u.getUserID();
                 }
             }
-            // Retrieve the value of the query parameter "password" (from password field)
-            String password = request.getParameter("password");
-            if (password == null
-                    || (password = htmlFilter(password.trim())).length() == 0) {
-                out.println("");
-            } else {
-                for (User u : listUser) {
-                    if (u.getUserPass().equals(password)) {
-                        checkPass = true;
-                        userID = u.getUserID();
-                    }
-                }
-            }
-            if (checkAcc == true && checkPass == true) {
+            if (checkAcc == true) {
                 user.processRequest(request, response, userID);
             } else {
                 String errorMessage = "Your account or password is not found!";
@@ -79,7 +62,7 @@ public class CheckAccount extends HttpServlet {
                 request.setAttribute("errorMessage", errorMessage);
 
                 // Chuyển hướng hoặc forward đến trang HTML
-                RequestDispatcher dispatcher = request.getRequestDispatcher("index.jsp");
+                RequestDispatcher dispatcher = request.getRequestDispatcher("login.jsp");
                 dispatcher.forward(request, response);
             }
             out.println("</body></html>");
