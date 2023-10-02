@@ -30,7 +30,6 @@ public class CheckAccount extends HttpServlet {
         // Set the response message's MIME type
         response.setContentType("text/html; charset=UTF-8");
         // Allocate a output writer to write the response message into the network socket
-        PrintWriter out = response.getWriter();
         getUser userList = new getUser();
         ArrayList<User> listUser = userList.getUser();
         ShowUser user = new ShowUser();
@@ -38,10 +37,6 @@ public class CheckAccount extends HttpServlet {
         try {
             boolean checkAcc = false;
             int userID = 1;
-            out.println("<!DOCTYPE html>");
-            out.println("<html><head>");
-            out.println("<meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>");
-            out.println("<title>Echo Servlet</title></head>");
             // Retrieve the value of the query parameter "username" (from text field)
             String username = request.getParameter("username");
             String password = request.getParameter("password");
@@ -65,9 +60,7 @@ public class CheckAccount extends HttpServlet {
                 RequestDispatcher dispatcher = request.getRequestDispatcher("login.jsp");
                 dispatcher.forward(request, response);
             }
-            out.println("</body></html>");
-        } finally {
-            out.close();  // Always close the output writer
+        } finally {  // Always close the output writer
         }
     }
 

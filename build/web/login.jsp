@@ -58,7 +58,7 @@
                                 <i>Password</i>
                             </div>
 
-                            <div class="links"> <a href="#">Forgot Password</a> <a href="./signup.html">Signup</a></div>
+                            <div class="links"> <a href="#">Forgot Password</a> <a href="./signup.jsp">Signup</a></div>
 
                             <div class="inputBox">
                                 <input type="submit" value="Login"> 
