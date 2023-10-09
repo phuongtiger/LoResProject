@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>LoResProject - Register</title>
-        <link rel="stylesheet" href="./css/style_index.css">
+        <link rel="stylesheet" href="./css/style.css">
     </head>
     <body>
         <section>
@@ -68,7 +68,7 @@
                             </div>
                             <div id="password_error" style="color: red;"></div>
                             <div class="links">
-                                <a href="./login.jsp">Already have an account? Login</a>
+                                <a href="./login.jsp">Already have an account? <strong>Login</strong></a>
                             </div>
 
                             <div class="inputBox">

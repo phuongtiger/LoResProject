@@ -6,12 +6,14 @@
             <file>file:/D:/Software%20Engineer/Block4/PRJ/LoResProject/src/java/dal/setUser.java</file>
             <file>file:/D:/Software%20Engineer/Block4/PRJ/LoResProject/src/java/dal/getUser.java</file>
             <file>file:/D:/Software%20Engineer/Block4/PRJ/LoResProject/web/index.jsp</file>
+            <file>file:/D:/Software%20Engineer/Block4/PRJ/LoResProject/web/cart.jsp</file>
             <file>file:/D:/Software%20Engineer/Block4/PRJ/LoResProject/src/java/controller/CheckAccount.java</file>
             <file>file:/D:/Software%20Engineer/Block4/PRJ/LoResProject/src/java/controller/ShowUser.java</file>
             <file>file:/D:/Software%20Engineer/Block4/PRJ/LoResProject/web/login.jsp</file>
             <file>file:/D:/Software%20Engineer/Block4/PRJ/LoResProject/src/java/controller/CreateAccount.java</file>
-            <file>file:/D:/Software%20Engineer/Block4/PRJ/LoResProject/web/ShowUser.jsp</file>
+            <file>file:/D:/Software%20Engineer/Block4/PRJ/LoResProject/src/java/controller/DemoSession.java</file>
             <file>file:/D:/Software%20Engineer/Block4/PRJ/LoResProject/web/signup.jsp</file>
+            <file>file:/D:/Software%20Engineer/Block4/PRJ/LoResProject/src/java/controller/CookieDemo.java</file>
         </group>
     </open-files>
 </project-private>

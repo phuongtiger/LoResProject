@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>LoResProject</title>
-        <link rel="stylesheet" href="css/style_index.css">
+        <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
         <section>
@@ -49,18 +49,18 @@
                     <div class="form">
                         <form action="CheckAccount" method="POST">
                             <div class="inputBox">
-                                <input type="text" name="username" required>
+                                <input type="text" value="${username}" name="username" required>
                                 <i>Username</i>
                             </div>
 
                             <div class="inputBox">
-                                <input type="password" name="password" required>
+                                <input  type="password" value="${password}" name="password" required>
                                 <i>Password</i>
                             </div>
 
                             <div class="links"> <a href="#">Forgot Password</a> <a href="./signup.jsp">Signup</a></div>
 
-                            <div class="inputBox">
+                            <div class="inputBox" >
                                 <input type="submit" value="Login"> 
                             </div>
                             <div id="message"></div>

@@ -36,7 +36,7 @@ public class CheckAccount extends HttpServlet {
         // Write the response message, in an HTML page
         try {
             boolean checkAcc = false;
-            int userID = 1;
+            String userID = "";
             // Retrieve the value of the query parameter "username" (from text field)
             String username = request.getParameter("username");
             String password = request.getParameter("password");

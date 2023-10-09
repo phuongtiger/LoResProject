@@ -23,7 +23,7 @@ public class DBConnect {
             
             String user = "sa";
             String pass = "123456789";
-            String url = "jdbc:sqlserver://localhost:1433;databaseName=FUH_COMPANY;encrypt=false";
+            String url = "jdbc:sqlserver://localhost:1433;databaseName=PRJ_Project;encrypt=false";
             Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
             connection = DriverManager.getConnection(url, user, pass);
             System.out.println("Connect database success!");

@@ -20,11 +20,11 @@ public class getUser extends DBConnect{
     public ArrayList<User> getUser(){
         ArrayList<User> userList = new ArrayList<>();
         try {
-            String sqlQuery = "select * from [Users]";
+            String sqlQuery = "select * from [User]";
             PreparedStatement stm = connection.prepareStatement(sqlQuery);
             ResultSet rs = stm.executeQuery();
             while(rs.next()){   
-                userList.add(new User(rs.getInt(1), rs.getString(2), rs.getString(2), rs.getString(3), rs.getString(4)));
+                userList.add(new User(rs.getString(1), rs.getString(2), rs.getString(3), rs.getString(4), rs.getString(5), rs.getString(6), rs.getString(7)));
             }
         } catch (SQLException ex) {
             Logger.getLogger(User.class.getName()).log(Level.SEVERE, null, ex);

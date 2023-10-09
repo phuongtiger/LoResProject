@@ -14,6 +14,7 @@ import jakarta.servlet.http.HttpServletResponse;
 import java.util.ArrayList;
 import models.User;
 import dal.getUser;
+import jakarta.servlet.http.Cookie;
 import java.io.PrintWriter;
 
 /**
@@ -23,17 +24,29 @@ import java.io.PrintWriter;
 @WebServlet(name="ShowUser", urlPatterns={"/ShowUser"})
 public class ShowUser extends HttpServlet {
    
-    protected void processRequest(HttpServletRequest request, HttpServletResponse response , int ID)
+    protected void processRequest(HttpServletRequest request, HttpServletResponse response , String ID)
     throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
         String userFullName = "";
         getUser userList = new getUser();
         ArrayList<User> listUser = userList.getUser();
         for (User u : listUser) {
-            if(u.getUserID() == ID){
+            if(u.getUserID().equals(ID)){
                 userFullName = u.getUserLastName();
             }
         }
+        
+        
+        String user = request.getParameter("username");
+        String pass = request.getParameter("password");
+        Cookie u = new Cookie("user_name", user);
+        Cookie p = new Cookie("pass_word", pass);
+        u.setMaxAge(60);
+        p.setMaxAge(60);
+        response.addCookie(u);
+        response.addCookie(p);
+        
+        
         request.setAttribute("userFullName", userFullName);
         request.getRequestDispatcher("index.jsp").forward(request, response);
         

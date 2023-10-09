@@ -19,7 +19,7 @@ public class setUser extends DBConnect{
         try {
             String sql2 = "INSERT INTO [Users] (UserID, Userfullname, PasswordHash, userAccount) VALUES (?, ?, ?, ?)";
             PreparedStatement stm = connection.prepareStatement(sql2);
-            stm.setInt(1, 7);
+            stm.setInt(1, 12);
             stm.setString(2, fullname);
             stm.setString(3, account);
             stm.setString(4, password);
