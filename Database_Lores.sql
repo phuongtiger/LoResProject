@@ -29,10 +29,10 @@ CREATE TABLE [dbo].[Order](
 
 
 GO
-INSERT [dbo].[User] ([UserID], [FirstName], [LastName], [Account], [Password], [Email], [Phone]) VALUES (1, N'Tran', N'Thang', N'tranthang123', N'123456789', N'tranthang123@gmail.com', N'0362336362')
-INSERT [dbo].[User] ([UserID], [FirstName], [LastName], [Account], [Password], [Email], [Phone]) VALUES (2, N'Nguyen', N'Khoi', N'nguyenkhoi123', N'123456789', N'nguyenkhoi123@gmail.com', N'0384077921')
-INSERT [dbo].[User] ([UserID], [FirstName], [LastName], [Account], [Password], [Email], [Phone]) VALUES (3, N'Hoang', N'Phuong', N'hoangphuong123', N'123456789', N'hoangphuong123@gmail.com', N'0326776754')
-INSERT [dbo].[User] ([UserID], [FirstName], [LastName], [Account], [Password], [Email], [Phone]) VALUES (4, N'Huynh', N'Sieu', N'huynhsieu123', N'123456789', N'huynhsieu123@gmail.com', N'0366230497')
+INSERT [dbo].[User] ([UserID], [FirstName], [LastName], [Account], [Password], [Email], [Phone]) VALUES (1, N'Tran', N'Thang', N'thang123', N'e10adc3949ba59abbe56e057f20f883e', N'tranthang123@gmail.com', N'0362336362')
+INSERT [dbo].[User] ([UserID], [FirstName], [LastName], [Account], [Password], [Email], [Phone]) VALUES (2, N'Nguyen', N'Khoi', N'nkhoi123', N'e10adc3949ba59abbe56e057f20f883e', N'nguyenkhoi123@gmail.com', N'0384077921')
+INSERT [dbo].[User] ([UserID], [FirstName], [LastName], [Account], [Password], [Email], [Phone]) VALUES (3, N'Hoang', N'Phuong', N'phuong123', N'e10adc3949ba59abbe56e057f20f883e', N'hoangphuong123@gmail.com', N'0326776754')
+INSERT [dbo].[User] ([UserID], [FirstName], [LastName], [Account], [Password], [Email], [Phone]) VALUES (4, N'Huynh', N'Sieu', N'sieu123', N'e10adc3949ba59abbe56e057f20f883e', N'huynhsieu123@gmail.com', N'0366230497')
 
 
 GO
