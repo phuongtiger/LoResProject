@@ -3,13 +3,17 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="Ogani Template">
+    <meta name="keywords" content="Ogani, unica, creative, html">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Information</title>
+    <title>Contact</title>
 
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;900&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
     <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
     <link rel="stylesheet" href="css/nice-select.css" type="text/css">
     <link rel="stylesheet" href="css/jquery-ui.min.css" type="text/css">
@@ -19,9 +23,11 @@
 </head>
 
 <body>
+
     <div id="preloder">
         <div class="loader"></div>
     </div>
+
     <div class="humberger__menu__overlay"></div>
     <div class="humberger__menu__wrapper">
         <div class="header__menu__logo">
@@ -50,15 +56,15 @@
         </div>
         <nav class="humberger__menu__nav mobile-menu">
             <ul>
-                <li class="active"><a href="./index.html">Home</a></li>
-                <li><a href="./shop-grid.html">Shop</a></li>
+                <li class="active"><a href="./index.jsp">Home</a></li>
+                <li><a href="./shop-grid.jsp">Shop</a></li>
                 <li><a href="#">Partners</a>
                     <ul class="header__menu__dropdown">
-                        <li><a href="#">Infomation</a></li>
-                        <li><a href="./registration.html">Registration</a></li>
+                        <li><a href="/information.jsp">Information</a></li>
+                        <li><a href="./shoping-cart.jsp">Registration</a></li>
                     </ul>
                 </li>
-                <li><a href="./contact.html">Contact</a></li>
+                <li><a href="./contact.jsp">Contact</a></li>
             </ul>
         </nav>
         <div id="mobile-menu-wrap"></div>
@@ -75,7 +81,8 @@
             </ul>
         </div>
     </div>
-    <!-- Desktop -->
+
+
     <header class="header">
         <div class="header__top">
             <div class="container">
@@ -121,21 +128,21 @@
             <div class="row">
                 <div class="col-lg-3">
                     <div class="header__logo">
-                        <a href="./index.html"><img src="img/browncow.jpg" alt=""></a>
+                        <a href="./index.jsp"><img src="img/browncow.jpg" alt=""></a>
                     </div>
                 </div>
                 <div class="col-lg-6">
                     <nav class="header__menu text-center">
                         <ul>
-                            <li ><a href="./index.html">Home</a></li>
-                            <li><a href="./shop-grid.html">Shop</a></li>
-                            <li class="active"><a href="#">Partners</a>
+                            <li><a href="./index.jsp">Home</a></li>
+                            <li><a href="./shop-grid.jsp">Shop</a></li>
+                            <li><a href="#">Partners</a>
                                 <ul class="header__menu__dropdown">
-                                    <li><a href="#">Infomation</a></li>
-                                    <li><a href="./registration.html">Registration</a></li>
+                                    <li><a href="./information.jsp">Information</a></li>
+                                    <li><a href="./registration.jsp">Registration</a></li>
                                 </ul>
                             </li>
-                            <li><a href="./contact.html">Contact</a></li>
+                            <li class="active"><a href="./contact.jsp">Contact</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -154,35 +161,139 @@
             </div>
         </div>
     </header>
-    <section class="breadcrumb-section set-bg" data-setbg="img/breadcrumb.jpg">
+
+
+    <section class="hero hero-normal">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12 text-center">
-                    <div class="breadcrumb__text">
-                        <h2>Policy</h2>
-                        <div class="breadcrumb__option">
-                            <a href="./index.html">Information</a>
-                            <span>Shop</span>
+                <div class="col-lg-3">
+                    <div class="hero__categories">
+                        <div class="hero__categories__all">
+                            <i class="fa fa-bars"></i>
+                            <span>All departments</span>
+                            <i class="fa fa-caret-down arrowdown" aria-hidden="true"></i>
+                        </div>
+                        <ul>
+                            <li><a href="#">Fresh Meat</a></li>
+                            <li><a href="#">Vegetables</a></li>
+                            <li><a href="#">Fruit & Nut Gifts</a></li>
+                            <li><a href="#">Fresh Berries</a></li>
+                            <li><a href="#">Ocean Foods</a></li>
+                            <li><a href="#">Butter & Eggs</a></li>
+                            <li><a href="#">Fastfood</a></li>
+                            <li><a href="#">Fresh Onion</a></li>
+                            <li><a href="#">Papayaya & Crisps</a></li>
+                            <li><a href="#">Oatmeal</a></li>
+                            <li><a href="#">Fresh Bananas</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-9">
+                    <div class="hero__search">
+                        <div class="hero__search__form">
+                            <form action="#">
+                                <div class="hero__search__categories">
+                                    All Categories
+                                    <i class="fa fa-caret-down arrowdown" aria-hidden="true"></i>
+                                </div>
+                                <input type="text" placeholder="What do yo u need?">
+                                <button type="submit" class="site-btn">SEARCH</button>
+                            </form>
+                        </div>
+                        <div class="hero__search__phone">
+                            <div class="hero__search__phone__icon">
+                                <i class="fa fa-phone"></i>
+                            </div>
+                            <div class="hero__search__phone__text">
+                                <h5>+84 11.188.888</h5>
+                                <span>support 24/7 time</span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <main>
+
+
+    <section class="breadcrumb-section set-bg" data-setbg="img/breadcrumb.jpg">
         <div class="container">
-            <div class="articles" style="padding: 50px 0;">
-                <p>1. Hệ thống dự phòng: Browncow xây dựng và duy trì một hệ thống dự phòng mạnh mẽ, bao gồm các máy chủ, cơ sở hạ tầng và cơ chế sao lưu để đảm bảo hệ thống vẫn hoạt động ổn định và không bị gián đoạn trong trường hợp hệ thống chính gặp sự cố.</p>
-                <p>2. An ninh thông tin: Browncow phải đảm bảo an ninh và bảo mật thông tin của người dùng và doanh nghiệp. Kế hoạch dự phòng bao gồm việc áp dụng các biện pháp bảo mật mạnh mẽ như mã hóa dữ liệu, giám sát an ninh, và đảm bảo tuân thủ các quy định bảo vệ dữ liệu.</p>
-                <p>3. Đào tạo và nâng cao nhân viên: Browncow cần đào tạo và nâng cao nhân viên về kỹ năng và kiến thức cần thiết để đối phó với các tình huống khẩn cấp và tình huống không mong muốn. Điều này bao gồm việc thực hiện các kế hoạch phản ứng và ứng phó, đảm bảo nhân viên biết cách xử lý tình huống một cách hiệu quả.</p>
-                <p>4. Dự phòng tài chính: Browncow cần xây dựng kế hoạch dự phòng tài chính để đảm bảo có đủ nguồn lực để duy trì hoạt động và phát triển trong trường hợp xảy ra tình huống khẩn cấp hoặc suy thoái kinh tế.</p>
-                <p>5. Tương tác với người dùng và đối tác: Kế hoạch dự phòng bao gồm việc duy trì tương tác tích cực và liên tục với người dùng và đối tác để giữ cho họ tin tưởng và hỗ trợ Browncow trong mọi tình huống.</p>
-                <p>6. Sự đa dạng về nguồn lực và đối tác: Browncow nên tìm kiếm và xây dựng mối quan hệ đa dạng với các đối tác và nhà cung cấp, đồng thời đảm bảo có sẵn nhiều nguồn lực và tùy chọn để giảm thiểu tác động của các rủi ro và thay đổi.</p>
-                <h2 class="text-center" style="padding: 40px 0; font-weight: 700; font-size: 46px;">Our Inforgraphic</h2>
-                <p class="text-center"><img src="./img/pofo.jpg" alt=""></p>
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="breadcrumb__text">
+                        <h2>Contact Us</h2>
+                        <div class="breadcrumb__option">
+                            <a href="./index.jsp">Home</a>
+                            <span>Contact Us</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </main>
+    </section>
+
+
+    <section class="contact spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-6 text-center">
+                    <div class="contact__widget">
+                        <i class="fa fa-mobile" style="font-size: 50px;" aria-hidden="true"></i>
+                        <h4>Phone</h4>
+                        <p>+84-3-8888-6868</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 text-center">
+                    <div class="contact__widget">
+                        <i class="fa fa-location-arrow" style="font-size: 50px;" aria-hidden="true"></i>
+                        <h4>Address</h4>
+                        <p>Can Tho, Viet Nam</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 text-center">
+                    <div class="contact__widget">
+                        <i class="fa fa-calendar-times-o" style="font-size: 50px;" aria-hidden="true"></i>
+                        <h4>Open time</h4>
+                        <p>10:00 am to 23:00 pm</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 text-center">
+                    <div class="contact__widget">
+                        <i class="fa fa-envelope" style="font-size: 50px;" aria-hidden="true"></i>
+                        <h4>Email</h4>
+                        <p><a href="/cdn-cgi/l/email-protection" class="__cf_email__"
+                                data-cfemail="6d05080101022d0e0201021f01040f430e0200">[browncow@gmail.com]</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="contact-form spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="contact__form__title">
+                        <h2>Leave Message</h2>
+                    </div>
+                </div>
+            </div>
+            <form action="#">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6">
+                        <input type="text" placeholder="Your name">
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <input type="text" placeholder="Your Email">
+                    </div>
+                    <div class="col-lg-12 text-center">
+                        <textarea placeholder="Your message"></textarea>
+                        <button type="submit" class="site-btn">SEND MESSAGE</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
 
     <footer class="footer spad">
         <div class="container">
@@ -190,12 +301,13 @@
                 <div class="col-lg-3 col-md-6 col-sm-6">
                     <div class="footer__about">
                         <div class="footer__about__logo">
-                            <a href="./index.html"><img src="img/logo.png" alt=""></a>
+                            <a href="./index.jsp"><img src="img/logo.png" alt=""></a>
                         </div>
                         <ul>
                             <li>Address: Can Tho, Viet Nam</li>
                             <li>Phone: +84 11.188.888</li>
-                            <li>Email: <a href="" class="__cf_email__">browncow@gmail.com</a>
+                            <li>Email: <a href="/cdn-cgi/l/email-protection" class="__cf_email__"
+                                    data-cfemail="8be3eee7e7e4cbe8e4e7e4f9e7e2e9a5e8e4e6">[browncow@gmail.com]</a>
                             </li>
                         </ul>
                     </div>
@@ -248,7 +360,7 @@
                                     src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
                                 <script>document.write(new Date().getFullYear());</script> All rights reserved | This
                                 template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a
-                                    href="#" target="_blank">BrownCow</a>
+                                    href="https://colorlib.com" target="_blank">BrownCow</a>
                             </p>
                         </div>
                         <div class="footer__copyright__payment"><img src="img/payment-item.png" alt=""></div>
@@ -267,6 +379,7 @@
     <script src="js/mixitup.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
+
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -278,7 +391,7 @@
     <script defer
         src="https://static.cloudflareinsights.com/beacon.min.js/v52afc6f149f6479b8c77fa569edb01181681764108816"
         integrity="sha512-jGCTpDpBAYDGNYR5ztKt4BQPGef1P0giN6ZGVUi835kFF88FOmmn8jBQWNgrNd8g/Yu421NdgWhwQoaOPFflDw=="
-        data-cf-beacon='{"rayId":"7de583915f9f1052","token":"cd0b4b3a733644fc843ef0b185f98241","version":"2023.4.0","si":100}'
+        data-cf-beacon='{"rayId":"7df6be5a0de13dd1","token":"cd0b4b3a733644fc843ef0b185f98241","version":"2023.4.0","si":100}'
         crossorigin="anonymous"></script>
 </body>
 

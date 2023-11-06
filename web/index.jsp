@@ -31,7 +31,7 @@
             </div>
             <div class="humberger__menu__cart">
                 <ul>
-                    <li><a href="#"><i class="fa fa-heart"></i> <span>0</span></a></li>
+                    <li><a href="#"><i class="fa fa-heart"></i> <span >0</span></a></li>
                     <li><a href="#"><i class="fa fa-shopping-bag"></i> <span>0</span></a></li>
                 </ul>
                 <div class="header__cart__price">item: <span>$0</span></div>
@@ -47,20 +47,20 @@
                     </ul>
                 </div>
                 <div class="header__top__right__auth">
-                    <a href="./CookieDemo"><i class="fa fa-user login"></i></a>
+                    <a href="./setCookie"><i class="fa fa-user login"></i></a>
                 </div>
             </div>
             <nav class="humberger__menu__nav mobile-menu">
                 <ul>
-                    <li class="active"><a href="./index.html">Home</a></li>
-                    <li><a href="./shop-grid.html">Shop</a></li>
+                    <li class="active"><a href="./index.jsp">Home</a></li>
+                    <li><a href="./shop-grid.jsp">Shop</a></li>
                     <li><a href="#">Partners</a>
                         <ul class="header__menu__dropdown">
-                            <li><a href="./information.html">Information</a></li>
-                            <li><a href="./shoping-cart.html">Registration</a></li>
+                            <li><a href="./information.jsp">Information</a></li>
+                            <li><a href="./shoping-cart.jsp">Registration</a></li>
                         </ul>
                     </li>
-                    <li><a href="./contact.html">Contact</a></li>
+                    <li><a href="./contact.jsp">Contact</a></li>
                 </ul>
             </nav>
             <div id="mobile-menu-wrap"></div>
@@ -112,7 +112,7 @@
                                     </ul>
                                 </div>
                                 <div class="header__top__right__auth ">
-                                    <a href="./CookieDemo"><i class="fa fa-user login"></i></a>
+                                    <a href="./setCookie"><i  class="fa fa-user login"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -123,28 +123,28 @@
                 <div class="row">
                     <div class="col-lg-3">
                         <div class="header__logo">
-                            <a href="./index.html"><img src="img/browncow.jpg" alt=""></a>
+                            <a href="./index.jsp"><img src="img/browncow.jpg" alt=""></a>
                         </div>
                     </div>
                     <div class="col-lg-6">
                         <nav class="header__menu text-center">
                             <ul>
-                                <li class="active"><a href="./index.html">Home</a></li>
-                                <li><a href="./shop-grid.html">Shop</a></li>
+                                <li class="active"><a href="./index.jsp">Home</a></li>
+                                <li><a href="./shop-grid.jsp">Shop</a></li>
                                 <li><a href="#">Partners</a>
                                     <ul class="header__menu__dropdown">
-                                        <li><a href="./information.html">Information</a></li>
-                                        <li><a href="./registration.html">Registration</a></li>
+                                        <li><a href="./information.jsp">Information</a></li>
+                                        <li><a href="./registration.jsp">Registration</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="./contact.html">Contact</a></li>
+                                <li><a href="./contact.jsp">Contact</a></li>
                             </ul>
                         </nav>
                     </div>
                     <div class="col-lg-3">
                         <div class="header__cart">
                             <ul>
-                                <li><a href="./DemoSession" id="favorite"><i class="fa fa-heart" ></i> <span>0</span></a></li>
+                                <li><a href="./CartList" id="favorite"><i class="fa fa-heart" ></i> <span id="favorite-number">0</span></a></li>
                                 <li><a href="#"><i class="fa fa-shopping-bag" id="cart"></i> <span>0</span></a></li>
                             </ul>
                             <div class="header__cart__price">item: <span>$0</span></div>
@@ -210,7 +210,7 @@
                                 <span>FRUIT FRESH</span>
                                 <h2>Inventory <br />90% Handle</h2>
                                 <p>Hope you enjoy your journey</p>
-                                <a href="/shop-grid.html" class="primary-btn">SHOP NOW</a>
+                                <a href="/shop-grid.jsp" class="primary-btn">SHOP NOW</a>
                             </div>
                         </div>
                     </div>
@@ -277,7 +277,7 @@
                         <div class="featured__item">
                             <div class="featured__item__pic set-bg" data-setbg="img/featured/feature-1.jpg">
                                 <ul class="featured__item__pic__hover product_item">
-                                    <li><a href="#" class="test"><i class="fa fa-heart "></i></a></li>
+                                    <li><a href="javascript:void(0);" class="product-list"><i class="fa fa-heart "></i></a></li>
                                     <li><a href="#"><i class="fa fa-retweet"></i></a></li>
                                     <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
                                 </ul>
@@ -292,7 +292,7 @@
                         <div class="featured__item">
                             <div class="featured__item__pic set-bg" data-setbg="img/featured/feature-2.jpg">
                                 <ul class="featured__item__pic__hover">
-                                    <li><a href="#" class="test"><i class="fa fa-heart "></i></a></li>
+                                    <li><a href="javascript:void(0);" class="product-list"><i class="fa fa-heart "></i></a></li>
                                     <li><a href="#"><i class="fa fa-retweet"></i></a></li>
                                     <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
                                 </ul>
@@ -307,7 +307,7 @@
                         <div class="featured__item">
                             <div class="featured__item__pic set-bg" data-setbg="img/featured/feature-3.jpg">
                                 <ul class="featured__item__pic__hover">
-                                    <li><a href="#" class="test"><i class="fa fa-heart "></i></a></li>
+                                    <li><a href="javascript:void(0);" class="product-list"><i class="fa fa-heart "></i></a></li>
                                     <li><a href="#"><i class="fa fa-retweet"></i></a></li>
                                     <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
                                 </ul>
@@ -322,7 +322,7 @@
                         <div class="featured__item">
                             <div class="featured__item__pic set-bg" data-setbg="img/featured/feature-4.jpg">
                                 <ul class="featured__item__pic__hover">
-                                    <li><a href="#" class="test"><i class="fa fa-heart"></i></a></li>
+                                    <li><a href="javascript:void(0);" class="product-list"><i class="fa fa-heart"></i></a></li>
                                     <li><a href="#"><i class="fa fa-retweet"></i></a></li>
                                     <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
                                 </ul>
@@ -337,7 +337,7 @@
                         <div class="featured__item">
                             <div class="featured__item__pic set-bg" data-setbg="img/featured/feature-5.jpg">
                                 <ul class="featured__item__pic__hover">
-                                    <li><a href="#" class="test"><i class="fa fa-heart"></i></a></li>
+                                    <li><a href="javascript:void(0);" class="product-list"><i class="fa fa-heart"></i></a></li>
                                     <li><a href="#"><i class="fa fa-retweet"></i></a></li>
                                     <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
                                 </ul>
@@ -352,7 +352,7 @@
                         <div class="featured__item">
                             <div class="featured__item__pic set-bg" data-setbg="img/featured/feature-6.jpg">
                                 <ul class="featured__item__pic__hover">
-                                    <li><a href="#" class="test"><i class="fa fa-heart"></i></a></li>
+                                    <li><a href="javascript:void(0);" class="product-list"><i class="fa fa-heart"></i></a></li>
                                     <li><a href="#"><i class="fa fa-retweet"></i></a></li>
                                     <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
                                 </ul>
@@ -367,7 +367,7 @@
                         <div class="featured__item">
                             <div class="featured__item__pic set-bg" data-setbg="img/featured/feature-7.jpg">
                                 <ul class="featured__item__pic__hover">
-                                    <li><a href="#" class="test"><i class="fa fa-heart"></i></a></li>
+                                    <li><a href="javascript:void(0);" class="product-list"><i class="fa fa-heart"></i></a></li>
                                     <li><a href="#"><i class="fa fa-retweet"></i></a></li>
                                     <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
                                 </ul>
@@ -382,7 +382,7 @@
                         <div class="featured__item">
                             <div class="featured__item__pic set-bg" data-setbg="img/featured/feature-8.jpg">
                                 <ul class="featured__item__pic__hover">
-                                    <li><a href="#" class="test"><i class="fa fa-heart"></i></a></li>
+                                    <li><a href="javascript:void(0);" class="product-list"><i class="fa fa-heart"></i></a></li>
                                     <li><a href="#"><i class="fa fa-retweet"></i></a></li>
                                     <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
                                 </ul>
@@ -685,7 +685,7 @@
                     <div class="col-lg-3 col-md-6 col-sm-6">
                         <div class="footer__about">
                             <div class="footer__about__logo">
-                                <a href="./index.html"><img src="img/logo.png" alt=""></a>
+                                <a href="./index.jsp"><img src="img/logo.png" alt=""></a>
                             </div>
                             <ul>
                                 <li>Address: Can Tho, Viet Nam</li>
@@ -775,16 +775,18 @@
         <script>
             var loginMessage = "<%= request.getAttribute("userFullName") %>";
             var listUser = document.getElementsByClassName("login");
-            var elements = document.querySelectorAll(".test");
-            var checkFavorite = document.getElementById("favorite")
+            var elements = document.querySelectorAll(".product-list");
+            var checkFavorite = document.getElementById("favorite");
+            var favoriteNumber = document.getElementById("favorite-number");
+            favoriteNumber.innerHTML = 0;
             var listProduct = "";
             var xhr = new XMLHttpRequest();
-            xhr.open("POST", "./DemoSession", true);
+            xhr.open("POST", "./CartList", true);
             xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
             elements.forEach(function(element) {
                 element.addEventListener("click", function() {
-                    listProduct += element.parentNode.parentNode.parentNode.parentNode.querySelector(".featured__item__text a").textContent + ", ";       
-                    
+                    listProduct += element.parentNode.parentNode.parentNode.parentNode.querySelector(".featured__item__text a").textContent + ", ";
+                    favoriteNumber.innerHTML++;
                 });
             });
             checkFavorite.addEventListener("click", function() {
@@ -795,7 +797,7 @@
                 loginMessage = "Login";
             }
             for (var i = 0; i < listUser.length; i++) {
-                listUser[i].innerHTML = loginMessage;
+                listUser[i].innerHTML = " " + loginMessage;
             }
 
         </script>

@@ -4,18 +4,15 @@
  */
 package controller;
 
-import dal.getUser;
+import dal.DAO;
 import jakarta.servlet.RequestDispatcher;
 import java.io.IOException;
-import java.io.PrintWriter;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
+import jakarta.servlet.http.Cookie;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
-import java.util.ArrayList;
-import java.util.Enumeration;
-import models.User;
 
 /**
  *
@@ -30,26 +27,17 @@ public class CheckAccount extends HttpServlet {
         // Set the response message's MIME type
         response.setContentType("text/html; charset=UTF-8");
         // Allocate a output writer to write the response message into the network socket
-        getUser userList = new getUser();
-        ArrayList<User> listUser = userList.getUser();
-        ShowUser user = new ShowUser();
+        DAO user = new DAO();
         // Write the response message, in an HTML page
         try {
-            boolean checkAcc = false;
-            String userID = "";
-            // Retrieve the value of the query parameter "username" (from text field)
             String username = request.getParameter("username");
             String password = request.getParameter("password");
-            // Get null if the parameter is missing from query string.
-            // Get empty string or string of white spaces if user did not fill in
-            for (User u : listUser) {
-                if (u.getUserAccount().equals(username) && u.getUserPass().equals(password)) {
-                    checkAcc = true;
-                    userID = u.getUserID();
-                }
-            }
-            if (checkAcc == true) {
-                user.processRequest(request, response, userID);
+            if (user.isValid(username, password)) {
+                Cookie u = new Cookie("user_name", username);
+                u.setMaxAge(60);
+                response.addCookie(u);
+                request.setAttribute("userFullName", user.getUsername());
+                request.getRequestDispatcher("index.jsp").forward(request, response);
             } else {
                 String errorMessage = "Your account or password is not found!";
 
@@ -57,8 +45,7 @@ public class CheckAccount extends HttpServlet {
                 request.setAttribute("errorMessage", errorMessage);
 
                 // Chuyển hướng hoặc forward đến trang HTML
-                RequestDispatcher dispatcher = request.getRequestDispatcher("login.jsp");
-                dispatcher.forward(request, response);
+                request.getRequestDispatcher("login.jsp").forward(request, response);
             }
         } finally {  // Always close the output writer
         }
@@ -70,35 +57,5 @@ public class CheckAccount extends HttpServlet {
     public void doPost(HttpServletRequest request, HttpServletResponse response)
             throws IOException, ServletException {
         doGet(request, response);
-    }
-
-    private static String htmlFilter(String message) {
-        if (message == null) {
-            return null;
-        }
-        int len = message.length();
-        StringBuffer result = new StringBuffer(len + 20);
-        char aChar;
-
-        for (int i = 0; i < len; ++i) {
-            aChar = message.charAt(i);
-            switch (aChar) {
-                case '<':
-                    result.append("&lt;");
-                    break;
-                case '>':
-                    result.append("&gt;");
-                    break;
-                case '&':
-                    result.append("&amp;");
-                    break;
-                case '"':
-                    result.append("&quot;");
-                    break;
-                default:
-                    result.append(aChar);
-            }
-        }
-        return (result.toString());
     }
 }

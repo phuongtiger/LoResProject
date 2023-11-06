@@ -49,12 +49,16 @@
                     <div class="form">
                         <form action="CreateAccount" method="POST">
                             <div class="inputBox">
-                                <input type="text" name="fullname" required>
-                                <i>Full Name</i>
+                                <input type="text" name="firstname" required>
+                                <i>First Name</i>
+                            </div>
+                            <div class="inputBox">
+                                <input type="text" name="lastname" required>
+                                <i>Last Name</i>
                             </div>
                             <div class="inputBox">
                                 <input type="text" name="username" required>
-                                <i>Username</i>
+                                <i>User Name</i>
                             </div>
 
                             <div class="inputBox" >

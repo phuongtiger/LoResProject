@@ -5,8 +5,7 @@
 
 package controller;
 
-import dal.getUser;
-import dal.setUser;
+import dal.DAO;
 import jakarta.servlet.RequestDispatcher;
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -33,14 +32,14 @@ public class CreateAccount extends HttpServlet {
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
     throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
-        getUser userList = new getUser();
-        setUser user = new setUser();
+        DAO user = new DAO();
         try{
-            String fullname = request.getParameter("fullname");
+            String firstname = request.getParameter("firstname");
+            String lastname = request.getParameter("lastname");
             String username = request.getParameter("username");
             String password = request.getParameter("password");
             
-            user.setUser(fullname, username, password);
+            user.addUser(firstname, lastname, username, password);
         }finally{
             
         }

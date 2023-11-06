@@ -4,6 +4,13 @@
  */
 package models;
 
+import dal.DBConnect;
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
+import java.sql.CallableStatement;
+import java.sql.Connection;
+import java.sql.ResultSet;
+
 /**
  *
  * @author ADMIN
