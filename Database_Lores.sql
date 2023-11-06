@@ -41,5 +41,11 @@ INSERT [dbo].[Product] ([ProductID], [ProductName], [Weight], [StartDate], [EndD
 INSERT [dbo].[Product] ([ProductID], [ProductName], [Weight], [StartDate], [EndDate], [Price]) VALUES (3, N'Dragon Fruit', 2, '1/1/2023', '1/5/2023', 3.49)
 INSERT [dbo].[Product] ([ProductID], [ProductName], [Weight], [StartDate], [EndDate], [Price]) VALUES (4, N'Strawberry', 1.5, '1/1/2023', '1/2/2023', 1.99)
 
-
+CREATE PROCEDURE CheckLogin
+@username varchar(10),
+@password varchar(32)
+AS
+SELECT Account
+FROM [User]
+WHERE Account = @username AND password = @password;
 
